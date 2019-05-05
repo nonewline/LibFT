@@ -11,9 +11,3 @@ void	ft_putstr(char const *s)
 		i++;
 	}
 }
-
-int	main(void)
-{
-	char str[] = "Hello World";
-	ft_putstr(str);
-}
