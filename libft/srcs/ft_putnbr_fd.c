@@ -1,3 +1,5 @@
+#include "libft.h"
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n < 0)
@@ -8,7 +10,7 @@ void	ft_putnbr_fd(int n, int fd)
 	else if (n >= 10)
 	{
 		ft_putnbr(n / 10);
-		ft_putchar((n % 10) + '0', fd);
+		ft_putchar_fd((n % 10) + '0', fd);
 	}
 	else
 		ft_putchar(n + '0');
