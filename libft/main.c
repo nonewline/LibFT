@@ -2,7 +2,6 @@
 
 int		main(void)
 {
-	char s1[] = "";
-	ft_putstr(ft_strrchr(s1, 'e'));
+	ft_putnbr(ft_strncmp("Hwyw", "Heyw", 2));
 	return (0);
 }
