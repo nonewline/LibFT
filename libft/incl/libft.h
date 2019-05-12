@@ -20,6 +20,8 @@ char	*ft_strcat(char *dest, const char *src);
 char	*ft_strncat(char *dest, const char *src, size_t n);
 char	*ft_strcpy(char *dest, const char *srcs);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
+char	*ft_strstr(char *str, char *to_find);
+char	*ft_strnstr(char *str, char *to_find, size_t n);
 char	*ft_strdup(const char *s);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
@@ -37,5 +39,6 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putstr(char const *s);
 void	ft_strclr(char *s);
 size_t	ft_strlen(const char *s);
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
 
 #endif

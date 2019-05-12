@@ -2,8 +2,6 @@
 
 int		main(void)
 {
-	ft_putnbr(ft_atoi("fsfsgrgs--1234"));
-	ft_putchar('\n');
-	ft_putnbr(atoi("fsfsgrgs--1234"));
+	ft_putstr(ft_strnstr("Hello World, how are you?", "World", 2));
 	return (0);
 }
