@@ -10,7 +10,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	while (len--)
 	{
 		*chr = (unsigned char)c;
-		if (_SC_LEVEL2_CACHE_LINESIZE)
+		if (len)
 			chr++;
 	}
 	return (b);
