@@ -2,21 +2,13 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char *srcc;
-	char *dstc;
-	size_t i;
+	char *temp;
 
-	i = 0;
-	srcc = (char *)src;
-	dstc = (char *)dest;
-	if (srcc < dstc)
-		while (--n)
-			*(dstc + n) = *(srcc + n);
-	else
-		while (i < n)
-		{
-			*(dstc + i) = *(srcc + i);
-			i++;
-		}
+	temp = (char *)malloc(sizeof(char) * n);
+	if (temp == NULL)
+		return (NULL);
+	ft_memcpy(temp, src, n);
+	ft_memcpy(dest, temp, n);
+	free(temp);
 	return (dest);
 }
