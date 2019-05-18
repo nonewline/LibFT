@@ -1,20 +1,20 @@
 NAME = libft.a
-
 SRC = srcs/*.c
-
-INCS = incl/ 
+INC = incl/
+FLAGS = -Wall -Werror -Wextra
+OBJ = *.o
 
 all: $(NAME)
 
 $(NAME):
-	@gcc -c -Wall -Werror -Wextra $(SRC) -I $(INCS)
-	@ar rc $(NAME) *.o
+	@gcc $(FLAGS) -c $(SRC) -I $(INC)
+	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
 
 clean:
-	@/bin/rm -f *.o
+	@/bin/rm -f $(OBJ)
 	
-fclean:		clean
+fclean:	clean
 	@/bin/rm -f $(NAME)
 	
 re: fclean all

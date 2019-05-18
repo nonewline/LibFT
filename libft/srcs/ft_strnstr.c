@@ -2,20 +2,30 @@
 
 char	*ft_strnstr(char *str, char *to_find, size_t n)
 {
-	size_t i;
-	size_t j;
+    char *s1;
+    char *s2;
+    size_t i;
 
-	i = 0;
-	while (str[i] != '\0')
+    if (!*to_find)
+	return ((char *)str);
+    while (n && *str)
+    {
+	if (*str == *to_find)
 	{
-		j = 0;
-		while (to_find[j] == str[i + j] && j < n)
-		{
-			if (to_find[j + 1] == '\0')
-				return (str + i);
-			j++;
-		}
-		i++;
+	    i = n;
+	    s1 = (char *)str;
+	    s2 = (char *)to_find;
+	    while (i && *s1 && *s2 && *s1 == *s2)
+	    {
+		s1++;
+		s2++;
+		i--;
+	    }
+	    if (!*s2)
+		return ((char *)str);
 	}
-	return (NULL);
+	str++;
+	n--;
+    }
+    return (NULL);
 }

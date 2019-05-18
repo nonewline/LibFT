@@ -11,9 +11,9 @@ void	*ft_memccpy(void *str1, const void *str2, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
+	    	s1[i] = s2[i];
 		if (s1[i] == c)
 			return (s1 + i + 1);
-		s1[i] = s2[i];
 		i++;
 	}
 	return (NULL);

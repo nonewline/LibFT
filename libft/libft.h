@@ -21,7 +21,6 @@ int	ft_tolower(int c);
 int	ft_atoi(const char *str);
 int	ft_strequ(char const *s1, char const *s2);
 int	ft_strcmp(const char *s1, const char *s2);
-int	ft_strnequ(const char *s1, const char *s2, size_t n);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 int	ft_memcmp(const void *str1, const void *str2, size_t n);
 char	*ft_itoa(int n);
