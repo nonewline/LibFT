@@ -68,5 +68,6 @@ void	*ft_memccpy(void *str1, const void *str2, int c, size_t n);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 t_list	*ft_lstnew(void const *content, size_t content_size);
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 #endif

@@ -3,19 +3,20 @@
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list *list;
-	t_list *cur;
+	t_list *head;
 
-	list = f(lst);
-	if (list == NULL)
-		return (NULL);
-	cur = list;
-	while (lst->next)
+	list = NULL;
+	if (lst && f)
 	{
+		head = f(lst);
+		list = head;
 		lst = lst->next;
-		cur->next = f(lst);
-		if (cur->next == NULL)
-			return (NULL);
-		cur = cur->next;
+		while (lst)
+		{
+			head->next = f(lst);
+			head = head->next;
+			lst = lst->next;
+		}
 	}
 	return (list);
 }
