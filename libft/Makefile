@@ -6,7 +6,7 @@ OBJ = *.o
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): incl/libft.h
 	@gcc $(FLAGS) -c $(SRC) -I $(INC)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
