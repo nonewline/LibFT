@@ -17,9 +17,9 @@ static int	n_len(int n)
 
 char		*ft_itoa(int n)
 {
-	int neg;
-	int len;
-	char *str;
+	int		neg;
+	int		len;
+	char	*str;
 
 	neg = (n < 0 ? 1 : 0);
 	len = n_len(n);
