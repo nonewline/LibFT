@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/05/21 10:34:20 by fremoor           #+#    #+#             */
+/*   Updated: 2019/05/21 10:35:52 by fremoor          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static int	word_len(char const *str, char c)
@@ -21,13 +33,13 @@ static int	word_len(char const *str, char c)
 	return (i);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
-	int i;
-	int j;
-	int len;
-	int start;
-	char **ret;
+	int		i;
+	int		j;
+	int		len;
+	int		start;
+	char	**ret;
 
 	if ((s == 0) || (c == 0))
 		return (NULL);

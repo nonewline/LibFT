@@ -1,12 +1,12 @@
 NAME = libft.a
 SRC = srcs/*.c
-INC = incl/
+INC = includes/
 FLAGS = -Wall -Werror -Wextra
 OBJ = *.o
 
 all: $(NAME)
 
-$(NAME): incl/libft.h
+$(NAME): includes/libft.h
 	@gcc $(FLAGS) -c $(SRC) -I $(INC)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
