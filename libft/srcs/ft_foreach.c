@@ -1,32 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 08:32:21 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/22 14:20:44 by fremoor          ###   ########.fr       */
+/*   Created: 2019/05/22 14:52:38 by fremoor           #+#    #+#             */
+/*   Updated: 2019/05/22 14:55:24 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void		*ft_memccpy(void *str1, const void *str2, int c, size_t n)
+void	ft_foreach(int *tab, int len, void (*f)(int))
 {
-	char		*s1;
-	const char	*s2;
+	int i;
 
-	s1 = (char *)str1;
-	s2 = (char *)str2;
-	while (n)
+	i = 0;
+	while (i < len)
 	{
-		*s1 = *s2;
-		if (*s2 == (char)c)
-			return (s1 + 1);
-		s1++;
-		s2++;
-		n--;
+		f(tab[i]);
+		i++;
 	}
-	return (NULL);
 }

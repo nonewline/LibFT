@@ -6,7 +6,7 @@
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 11:49:55 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/21 11:53:27 by fremoor          ###   ########.fr       */
+/*   Updated: 2019/05/22 15:10:40 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,9 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+int					ft_power(int nb, int pwr);
+int					ft_factorial(int nb);
+int					ft_sqrt(int nb);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
@@ -37,6 +40,7 @@ int					ft_strnequ(const char *s1, const char *s2, size_t n);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_memcmp(const void *str1, const void *str2, size_t n);
 char				*ft_itoa(int n);
+char				*ft_strrev(char *str);
 char				*ft_strnew(size_t size);
 char				*ft_strdup(const char *s);
 char				*ft_strtrim(char const *s);
@@ -68,6 +72,7 @@ void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_striter(char *s, void (*f)(char *));
+void				ft_foreach(int *tab, int len, void(*f)(int));
 void				*ft_memset(void *b, int c, size_t len);
 void				*ft_memchr(const void *s, int c, size_t n);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
