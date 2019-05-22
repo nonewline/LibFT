@@ -65,3 +65,10 @@ This is my attempt at recreating some of the Standard C Library's functions.
 + ft_lstadd
 + ft_lstiter
 + ft_lstmap
+
+## Extras - 5/5
++ ft_power
++ ft_factorial
++ ft_sqrt
++ ft_foreach
++ ft_strrev
