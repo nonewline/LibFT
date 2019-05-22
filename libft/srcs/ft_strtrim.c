@@ -6,7 +6,7 @@
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 10:37:29 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/21 10:37:36 by fremoor          ###   ########.fr       */
+/*   Updated: 2019/05/22 11:38:21 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strtrim(char const *s)
 	size_t start;
 	size_t end;
 
+	if (!s)
+		return (NULL);
 	start = 0;
 	while (s[start] == ' ' || s[start] == '\n' || s[start] == '\t')
 		start++;

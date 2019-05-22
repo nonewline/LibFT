@@ -6,7 +6,7 @@
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:29:17 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/21 13:32:39 by fremoor          ###   ########.fr       */
+/*   Updated: 2019/05/22 11:40:50 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ char		*ft_itoa(int n)
 	neg = (n < 0 ? 1 : 0);
 	len = n_len(n);
 	str = ft_strnew((size_t)(len + neg));
+	if (!str)
+		return (NULL);
 	if (neg == 1)
 		str[0] = '-';
 	else if (n > 0)
