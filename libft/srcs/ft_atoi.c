@@ -6,7 +6,7 @@
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:30:07 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/21 10:29:46 by fremoor          ###   ########.fr       */
+/*   Updated: 2019/05/23 08:21:39 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int		ft_atoi(const char *str)
 {
-	int ret;
-	int neg;
-	int i;
+	int	ret;
+	int	neg;
+	int	i;
 
 	ret = 0;
 	neg = 1;
