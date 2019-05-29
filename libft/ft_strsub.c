@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 08:42:10 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/21 08:42:19 by fremoor          ###   ########.fr       */
+/*   Created: 2019/05/21 10:36:52 by fremoor           #+#    #+#             */
+/*   Updated: 2019/05/29 13:04:15 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *dest, const char *src)
+char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	int len;
-	int i;
+	char	*str;
+	size_t	i;
 
+	if (!s)
+		return (NULL);
+	str = ft_strnew(len);
+	if (str == NULL)
+		return (NULL);
 	i = 0;
-	len = ft_strlen(dest);
-	while (src[i] != '\0')
+	while (i < len)
 	{
-		dest[len + i] = src[i];
+		str[i] = s[start + i];
 		i++;
 	}
-	dest[len + i] = '\0';
-	return (dest);
+	str[i] = '\0';
+	return (str);
 }
