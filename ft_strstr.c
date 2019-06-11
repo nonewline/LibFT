@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 08:36:07 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/23 09:25:12 by fremoor          ###   ########.fr       */
+/*   Created: 2019/05/21 10:32:51 by fremoor           #+#    #+#             */
+/*   Updated: 2019/06/10 09:56:09 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+char	*ft_strstr(char *str, char *to_find)
 {
-	if (dest == NULL && src == NULL)
-		return (NULL);
-	if (dest < src)
-		ft_memcpy(dest, src, n);
-	else
-		while (n--)
-			*(unsigned char *)(dest + n) = *(unsigned char *)(src + n);
-	return (dest);
+	int i;
+	int j;
+
+	i = 0;
+	if (*to_find == '\0')
+		return ((char *)str);
+	while (str[i] != '\0')
+	{
+		j = 0;
+		while (to_find[j] == str[i + j])
+		{
+			if (to_find[j + 1] == '\0')
+				return (str + i);
+			j++;
+		}
+		i++;
+	}
+	return (NULL);
 }

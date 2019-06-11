@@ -6,7 +6,7 @@
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 10:34:20 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/22 12:05:15 by fremoor          ###   ########.fr       */
+/*   Updated: 2019/06/10 10:08:02 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char		**ft_strsplit(char const *s, char c)
 	int		start;
 	char	**ret;
 
-	if ((s == 0) || (c == 0))
+	if ((s == NULL) || (c == 0))
 		return (NULL);
 	len = word_len(s, c);
 	if (!(ret = malloc((sizeof(char *)) * (len + 1))))
