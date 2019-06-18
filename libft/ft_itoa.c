@@ -6,11 +6,15 @@
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:29:17 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/22 11:40:50 by fremoor          ###   ########.fr       */
+/*   Updated: 2019/06/18 09:17:11 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** n_len gets the length of the number as chars, e.g. 10 would be 2 and 234 = 3
+*/
 
 static int	n_len(int n)
 {
@@ -26,6 +30,11 @@ static int	n_len(int n)
 	}
 	return (i);
 }
+
+/*
+** ft_itoa fills the string char by char by modding the number by ten to get
+** the last number and then divs it by 10 to move it up one digit
+*/
 
 char		*ft_itoa(int n)
 {

@@ -6,11 +6,16 @@
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 10:34:20 by fremoor           #+#    #+#             */
-/*   Updated: 2019/06/10 10:08:02 by fremoor          ###   ########.fr       */
+/*   Updated: 2019/06/12 10:27:10 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Word_len gets the length of the word. It also skips over 1 or multiple
+** chars. It then sends back the length of the word to ft_strsplit
+*/
 
 static int	word_len(char const *str, char c)
 {
@@ -32,6 +37,13 @@ static int	word_len(char const *str, char c)
 	}
 	return (i);
 }
+
+/*
+** ft_strsplit first gets the length of the words and then mallocs enough
+** space for it in the array. After the malloc, the while loop runs thourgh
+** the const char and inserts char for char unless its a bad char
+** at the end it returns the array made within ft_strsplit
+*/
 
 char		**ft_strsplit(char const *s, char c)
 {

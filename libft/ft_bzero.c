@@ -6,7 +6,7 @@
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:25:31 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/21 08:25:40 by fremoor          ###   ########.fr       */
+/*   Updated: 2019/06/18 09:07:38 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,6 @@
 
 void	ft_bzero(void *str, size_t n)
 {
-	size_t i;
-
-	i = 0;
-	while (i < n)
-	{
-		((char *)str)[i] = 0;
-		i++;
-	}
+	if (n)
+		ft_memset(str, 0, n);
 }

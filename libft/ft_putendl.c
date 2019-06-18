@@ -6,7 +6,7 @@
 /*   By: fremoor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:37:08 by fremoor           #+#    #+#             */
-/*   Updated: 2019/05/21 08:37:33 by fremoor          ###   ########.fr       */
+/*   Updated: 2019/06/12 09:54:57 by fremoor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl(char const *s)
 {
+	if (s == NULL)
+		return ((void)NULL);
 	while (*s != '\0')
 		write(1, &(*s++), 1);
 	ft_putchar('\n');
