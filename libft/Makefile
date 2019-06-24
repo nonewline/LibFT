@@ -30,7 +30,7 @@ OBJ = ft_atoi.o ft_bzero.o ft_factorial.o ft_foreach.o ft_isalnum.o \
 
 all: $(NAME)
 
-$(NAME): libft.h
+$(NAME):
 	@gcc $(FLAGS) -c $(SRC) -I $(INC)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
