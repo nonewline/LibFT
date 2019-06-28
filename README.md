@@ -26,7 +26,6 @@ To compile the libft, you need to run the following commands:
 
 ```
 make
-make clean
 ```
 
 ## Using the library:
