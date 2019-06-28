@@ -84,6 +84,7 @@ all: $(NAME)
 
 $(NAME): $(SRCO)
 	@ar rc $(NAME) $(SRCO)
+	@rm -r $(SRCO)
 	@echo "\033[92mLibrary Compiled"
 
 %.o: %.c
