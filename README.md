@@ -1,5 +1,15 @@
 # Libft - C - 2019
+
 Libft is a library we created in C to help us during the WeThinkCode journey.
+
+## WeThinkCode:
+
+**Part 1:** 28/28  
+**Part 2:** 24/24  
+**Bonus:**  6/6  
+**Five Extra:** 5/5  
+  
+**Total:** 125/125
 
 ## Installation:
 
@@ -9,6 +19,7 @@ To get started, clone the Libft repo and go into the folder:
 git clone https://github.com/FWMoor/libft
 cd ./libft/libft/
 ```
+
 ### Compiling:
 
 To compile the libft, you need to run the following commands:
@@ -32,12 +43,15 @@ gcc [Your Main] [Other Files] libft.a
 ./a.out
 ```
 
+## Disclaimer:
+
+The functions I've altered have been altered by changing my code partly. This libft wont be changed regularly as this is only 
+for my github. I have another private repo in which I will add my new functions through the year.
+
 ## Don't be a GitHub hero!
+
 Come and talk to me before using my code. Some of the functions have been altered from the one I pushed.
 Before you use it and mess up, come talk to me.
 I can explain to you what is does and how to do it yourself.
 You won't learn anything by just taking code.
-
-## Disclaimer
-The functions I've altered have been altered by changing my code partly. This libft wont be changed regularly as this is only 
-for my github. I have another private repo in which I will add my new functions through the year. Thanks
+Thanks
