@@ -20,7 +20,7 @@ git clone https://github.com/FWMoor/libft
 cd ./libft/libft/
 ```
 
-### Compiling:
+### Making:
 
 To compile the libft, you need to run the following commands:
 
