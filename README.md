@@ -16,7 +16,7 @@ Libft is a library we created in C to help us during the WeThinkCode journey.
 To get started, clone the Libft repo and go into the folder:
 
 ```
-git clone https://github.com/FWMoor/libft
+git clone https://github.com/nonewline/libft
 cd ./libft/libft/
 ```
 
@@ -42,15 +42,14 @@ gcc [Your Main] [Other Files] libft.a
 ./a.out
 ```
 
-## Disclaimer:
+## Disclaimer:  
 
-The functions I've altered have been altered by changing my code partly. This libft won't be changed regularly as this is only 
-for my github. I have another private repo in which I will add my new functions through the year.
+This is [Fred's](https://github.com/fwmoor) GNL. If you have questions, ask him.  
+Don't just use his code without his permission.
 
 ## Don't be a GitHub hero!
 
-Come and talk to me before using my code. Some of the functions have been altered from the one I pushed.
-Before you use it and mess up, come talk to me.
-I can explain to you what is does and how to do it yourself.
-You won't learn anything by just taking code.
+It won't help just stealing code. Come talk to one of the NoNewLine members if you're unsure about how something works.  
+[Fred](https://github.com/fwmoor) wrote this with help from the rest of the NoNewLine members. Any of them will be able to help you!  
+Also, check out the rest of the NoNewLine repos. You might find something cool!  
 Thanks!
