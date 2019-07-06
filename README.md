@@ -44,7 +44,7 @@ gcc [Your Main] [Other Files] libft.a
 
 ## Disclaimer:
 
-The functions I've altered have been altered by changing my code partly. This libft wont be changed regularly as this is only 
+The functions I've altered have been altered by changing my code partly. This libft won't be changed regularly as this is only 
 for my github. I have another private repo in which I will add my new functions through the year.
 
 ## Don't be a GitHub hero!
@@ -53,4 +53,4 @@ Come and talk to me before using my code. Some of the functions have been altere
 Before you use it and mess up, come talk to me.
 I can explain to you what is does and how to do it yourself.
 You won't learn anything by just taking code.
-Thanks
+Thanks!
