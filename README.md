@@ -30,7 +30,7 @@ make
 
 ## Using the library:
 
-To use the library, you need to add "#include "libft.h"" in your name and change the directory of your libft.h.
+To use the library, you need to add "#include "libft.h"" in your main and change the directory to the one of your libft.h.
 If you add a function to the library, you'll need to add the function in the libft.h file and the Makefile.
 
 ### Compiling with libft.a
